@@ -10,4 +10,10 @@ class SocialMediaBlogAppApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void socialMediaAppTest(){
+		System.out.println("I m running my test");
+
+	}
+
 }
