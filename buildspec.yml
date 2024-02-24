@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto8
+      java: corretto17
     commands:
       - echo install
   pre-build:
     commands:
-      - echo re_build
+      - echo pre_build
   build:
     commands:
       - mvn package
