@@ -1,6 +1,7 @@
 package com.bharath.learning.blog.socialmediablogapp.Service;
 
 import com.bharath.learning.blog.socialmediablogapp.Dto.PostDto;
+import com.bharath.learning.blog.socialmediablogapp.Payload.PostResponse;
 
 import java.util.List;
 
@@ -8,7 +9,7 @@ public interface PostService {
 
    PostDto createPost(PostDto postDto);
 
-   List<PostDto>getAllPosts();
+   PostResponse getAllPosts(int pageNo, int pageSize);
 
    PostDto getPostById(Long id);
 
