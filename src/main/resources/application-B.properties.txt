@@ -1,0 +1,23 @@
+spring.profiles.active= cloud,local
+
+# In Memory Database properties
+spring.h2.console.enabled=true
+
+logging.level.org.springframework = info
+spring.jpa.show-sql=true
+
+server.port=5000
+
+
+
+spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+## Hibernate ddl auto (create, create-drop, validate,update)
+spring.jpa.hibernate.ddl-auto=update
+
+
+server.error.include-stacktrace=never
