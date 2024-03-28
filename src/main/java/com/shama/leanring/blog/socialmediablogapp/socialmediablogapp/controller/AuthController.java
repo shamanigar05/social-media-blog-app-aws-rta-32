@@ -5,6 +5,7 @@ import com.shama.leanring.blog.socialmediablogapp.socialmediablogapp.dto.JWTAuth
 import com.shama.leanring.blog.socialmediablogapp.socialmediablogapp.dto.LoginDto;
 import com.shama.leanring.blog.socialmediablogapp.socialmediablogapp.dto.RegisterDto;
 import com.shama.leanring.blog.socialmediablogapp.socialmediablogapp.service.impl.AuthService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/auth")
+@Tag(
+        name = "SOCIAL MEDIA AUTHENTICATION RESOURCE CRUD REST APIS"
+)
 public class AuthController {
 
     @Autowired
